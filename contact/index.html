@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="description" content="St. Amour Knives">
     <meta name="keywords" content="knife, knives, custom, handmade, handcrafted, hand, crafted">
@@ -8,74 +9,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>St. Amour Knives</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link rel='stylesheet' href='../css/style.css'/>
-  </head>
-	<body>
+    <link rel='stylesheet' href='../css/style.css' />
+</head>
+
+<body>
     <script async>
-      var $buoop = {required:{e:16,f:52,c:57,s:10.3,o:44,o_a:46,samsung:6.2},
-      onshow: function $showBanner(){
-        document.getElementById("browserUpdate").style.display = "block";
-      },
-      nomessage:true,test:false,insecure:true,api:2019.06 };
-      function $buo_f(){
-       var e = document.createElement("script");
-       e.src = "https://www.browser-update.org/update.min.js";
-       document.body.appendChild(e);
-      };
-      try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
-      catch(e){window.attachEvent("onload", $buo_f)}
+        var $buoop = {
+            required: { e: 16, f: 52, c: 57, s: 10.3, o: 44, o_a: 46, samsung: 6.2 },
+            onshow: function $showBanner() {
+                document.getElementById("browserUpdate").style.display = "block";
+            },
+            nomessage: true, test: false, insecure: true, api: 2019.06
+        };
+        function $buo_f() {
+            var e = document.createElement("script");
+            e.src = "https://www.browser-update.org/update.min.js";
+            document.body.appendChild(e);
+        };
+        try { document.addEventListener("DOMContentLoaded", $buo_f, false) }
+        catch (e) { window.attachEvent("onload", $buo_f) }
     </script>
     <header>
-      <nav class="navgrid">
-        <a href="../" class="navTile" id="homeTile">Home</a>
-        <a href="../knives/" class="navTile">Knives</a>
-        <a href="/" class="navTile">Contact</a>
-      </nav>
+        <nav class="navgrid">
+            <a href="../" class="navTile" id="homeTile">Home</a>
+            <a href="../knives/" class="navTile">Knives</a>
+            <a href="/" class="navTile">Contact</a>
+        </nav>
     </header>
     <div class="navFiller"></div>
     <div id="browserUpdate" style="display: none">
-      <span onclick="this.parentElement.style.display='none'">&times;</span>
-      <p> Your browser is out of date and no longer supported. <br>
-      Please update or download a modern browser to ensure the best and safest experience on the web. <br>
-      For security and speed we recommend <a href="https://www.mozilla.org/firefox/" rel="noreferrer noopener" target="_blank">Mozilla Firefox</a>.</p>
+        <span onclick="this.parentElement.style.display='none'">&times;</span>
+        <p> Your browser is out of date and no longer supported. <br>
+            Please update or download a modern browser to ensure the best and safest experience on the web. <br>
+            For security and speed we recommend <a href="https://www.mozilla.org/firefox/" rel="noreferrer noopener"
+                target="_blank">Mozilla Firefox</a>.</p>
     </div>
     <main class="contact">
-      <div class="contactImage">
-        <h1>Contact</h1>
-        <h2>Murray St. Amour</h2>
-      </div>
-      <p>If you have any questions feel free to contact me.</p>
-      <p>The knives that you see online are only a small selection of what I have built and my inventory is always changing.</p>
-      <hr>
-      <a class="contactLink" href="mailto:knives@nrtco.net" target="blank_">
-        <img src="img/emailB.png" alt="mail icon">
-        knives@nrtco.net
-      </a><br>
-      <a class="contactLink" href="tel:+16135874194">
-        <img src="img/phoneB.png" alt="phone icon">
-        1-613-639-0210
-      </a>
-      <hr>
-      <form class="form" action="http://formspree.io/knives@nrtco.net"
-            method="POST">
-          <label for="name">Name *</label>
-          <input type="text" name="_gotcha" style="display:none" />
-          <input type="text" name="name" required>
-          <label for="email">Email Address *</label>
-          <input type="email" name="_replyto" required>
-          <label for="message">Message *</label>
-          <textarea type="text" name="body" required></textarea>
-          <input type="hidden" name="_next" value="thanks" />
-          <input id="submit" type="submit" value="Send">
-      </form>
-    	<footer>
-    		<h6>&copy St. Amour Knives</h6>
-        <h6>All Rights Reserved &#8226
-    			<script async type="text/javascript">
-    			var d = new Date()
-    			document.write(d.getFullYear())
-    			</script></h6>
-    	</footer>
+        <div class="contactImage">
+            <h1>Contact</h1>
+            <h2>Murray St. Amour</h2>
+        </div>
+        <p>If you have any questions feel free to contact me.</p>
+        <p>The knives that you see online are only a small selection of what I have built and my inventory is always
+            changing.</p>
+        <hr>
+        <a class="contactLink" href="mailto:knives@nrtco.net" target="blank_">
+            <img src="img/emailB.png" alt="mail icon">
+            knives@nrtco.net
+        </a><br>
+        <a class="contactLink" href="tel:+16135874194">
+            <img src="img/phoneB.png" alt="phone icon">
+            1-613-639-0210
+        </a>
+        <hr>
+        <form class="form" action="http://formspree.io/knives@nrtco.net" method="POST">
+            <label for="name">Name *</label>
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="text" name="name" required>
+            <label for="email">Email Address *</label>
+            <input type="email" name="_replyto" required>
+            <label for="message">Message *</label>
+            <textarea type="text" name="body" required></textarea>
+            <input type="hidden" name="_next" value="thanks" />
+            <input id="submit" type="submit" value="Send">
+        </form>
+        <footer>
+            <h6>&copy St. Amour Knives</h6>
+            <h6>All Rights Reserved &#8226
+                <script async type="text/javascript">
+                    var d = new Date()
+                    document.write(d.getFullYear())
+                </script>
+            </h6>
+        </footer>
     </main>
-  </body>
+</body>
+
 </html>
