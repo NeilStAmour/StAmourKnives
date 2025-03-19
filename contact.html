@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>St. Amour Knives</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link rel='stylesheet' href='../css/style.css' />
+    <link rel='stylesheet' href='css/style.css' />
 </head>
 
 <body>
@@ -30,13 +30,14 @@
         catch (e) { window.attachEvent("onload", $buo_f) }
     </script>
     <header>
-        <nav class="navgrid">
-            <a href="../" class="navTile" id="homeTile">Home</a>
-            <a href="../knives/" class="navTile">Knives</a>
-            <a href="/" class="navTile">Contact</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="knives.html">Knives</a></li>
+                <li><a href="contact.html" id="homeTile">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <div class="navFiller"></div>
     <div id="browserUpdate" style="display: none">
         <span onclick="this.parentElement.style.display='none'">&times;</span>
         <p> Your browser is out of date and no longer supported. <br>
