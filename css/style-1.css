@@ -1,0 +1,453 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    /* --accent: #caa66b; */
+    --accent: #d01030;
+}
+
+body {
+    background: #ffffff;
+    color: #111;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: underline;
+    border-bottom: 1px solid transparent;
+    transition: border 0.2s;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--accent);
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 0.3rem;
+
+}
+
+header {
+    background-color: #1b1b20;
+    color: #ffffff;
+    border-bottom: 1px solid var(--accent);
+}
+
+header nav {
+    display: flex;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin: auto;
+    max-width: 900px;
+}
+
+header nav a {
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    margin: auto;
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 25%;
+    max-width: 200px;
+    text-align: center;
+}
+
+header nav a:hover {
+    text-decoration: underline solid Currentcolor 2px;
+    background-color: #111;
+    color: white;
+}
+a#homeTile {
+    text-decoration: underline solid Currentcolor;
+}
+
+main {
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-grow: 2;
+}
+
+section {
+    max-width: 1000px;
+    margin: 1rem auto 0;
+    border-bottom: 1px solid var(--accent);
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: #1b1b20;
+    filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.6));
+}
+
+footer div.socials {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    padding: 5px 0 5px 0;
+}
+
+footer div.socials img.facebook {
+    height: 40px;
+    width: auto;
+    margin: 0 5px;
+}
+
+footer div.socials img.instagram {
+    height: 34px;
+    width: auto;
+    margin: 3px 5px;
+}
+
+footer p {
+    color: #ffffff;
+    margin: 0;
+}
+
+.hero {
+    padding: 6rem 2rem 3rem;
+    text-align: center;
+    background-color: #303640;
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--accent);
+    margin-top: 0;
+}
+
+.hero img {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: white;
+}
+
+.selling-points {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1rem;
+    border-bottom: none;
+}
+
+.selling-point {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--accent);
+    padding: 0;
+    align-items: center;
+}
+
+.selling-point picture {
+    margin: 1rem;
+}
+
+.selling-point picture img {
+    height: auto;
+    max-height: 250px;
+    border-radius: 50%;
+}
+
+.selling-point .text {
+    max-width: 600px;
+    text-align: left;
+    margin: 1rem;
+}
+
+.contact {
+    border-bottom: none;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contact h2 {
+    border-bottom: none;
+}
+
+.contact p {
+    padding-bottom: 0.5rem;
+}
+
+.contact a {
+    background-color: #303640;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact a:hover {
+    background-color: var(--accent);
+    color: #fff;
+}
+
+.knives-text h4, .knives-text p {
+    max-width: 800px;
+    margin: 1rem auto 0;
+}
+
+.knife-section {
+    max-width: 2200px;
+}
+
+.knife-section h2 {
+    padding-bottom: 1rem;
+}
+
+.knife-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(5, auto);
+    row-gap: 2rem;
+    column-gap: 1rem;
+}
+
+.knife-card {
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 750px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.knife-card-large {
+    max-width: 1500px;
+}
+
+.knife-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.knife-card picture {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.knife-img {
+    width: 100%;
+    height: auto;
+}
+
+.knife-info {
+    padding: 0.75rem 1rem;
+    border-top: 1px solid #eee;
+    font-size: 0.95rem;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.knife-info p {
+    margin: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 90%;
+}
+
+.modal img {
+    max-width: 98vw;
+    max-height: 98vh;
+    display: block;
+    object-fit: contain;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%; /* For horizontal centering as well */
+    transform: translate(-50%, -50%); /* Adjusts for the element's own dimensions */
+}
+
+.about-bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-bio picture{
+    max-width: 250px;
+    width: 100%;
+}
+
+form.form {
+    margin: 0 auto;
+    padding: 2rem 0;
+    max-width: 1000px;
+}
+
+form.form input[type="text"],
+form.form input[type="email"],
+form.form textarea {
+    padding: 0.5rem 0.75rem;
+    margin: 0 0 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+}
+
+form.form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+form.form input[type="submit"] {
+    align-self: flex-start;
+    background-color: #111;
+    color: #fff;
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+form.form input[type="submit"]:hover {
+    background-color: var(--accent);
+}
+
+@media (min-width: 768px) {
+    main {
+        padding: 0 2rem;
+    }
+
+    header nav {
+        gap: 2rem;
+    }
+    .about-bio{
+        flex-direction: row;
+    }
+    .about-bio img{
+        max-height: 250px;
+        width: auto;
+    }
+
+    .selling-point {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+
+    .selling-point:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .selling-point img {
+        flex: 1;
+        max-height: 350px;
+    }
+
+    .selling-point .text {
+        flex: 2;
+        padding: 0 1rem;
+    }
+    .knife-grid {
+        grid-template-columns: repeat(2, auto);
+    }
+    .knife-card-large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+@media (min-width: 1367px) {
+    .knife-grid {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media (min-width: 1921px) {
+    .knife-grid {
+        grid-template-columns: repeat(4, auto);
+    }
+}

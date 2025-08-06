@@ -9,111 +9,515 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>St. Amour Knives</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link rel='stylesheet' href='css/style.css' />
+    <link rel='stylesheet' href='css/style-1.css' />
 </head>
 
 <body>
-    <script async>
-        var $buoop = {
-            required: { e: 16, f: 52, c: 57, s: 10.3, o: 44, o_a: 46, samsung: 6.2 },
-            onshow: function $showBanner() {
-                document.getElementById("browserUpdate").style.display = "block";
-            },
-            nomessage: true, test: false, insecure: true, api: 2019.06
-        };
-        function $buo_f() {
-            var e = document.createElement("script");
-            e.src = "https://www.browser-update.org/update.min.js";
-            document.body.appendChild(e);
-        };
-        try { document.addEventListener("DOMContentLoaded", $buo_f, false) }
-        catch (e) { window.attachEvent("onload", $buo_f) }
-    </script>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="knives.html" id="homeTile">Knives</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="/" id="homeTile">Knives</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <div id="browserUpdate" style="display: none">
-        <span onclick="this.parentElement.style.display='none'">&times;</span>
-        <p> Your browser is out of date and no longer supported. <br>
-            Please update or download a modern browser to ensure the best and safest experience on the web. <br>
-            For security and speed we recommend <a href="https://www.mozilla.org/firefox/" rel="noreferrer noopener"
-                target="_blank">Mozilla Firefox</a>.</p>
-    </div>
-    <main class="gallery">
-        <h1>St. Amour Knives</h1>
-        <div class="galleryGrid">
-            <img class="galleryImage" src="img/knives/knife01.jpg" alt="1. M4-Lava CPM-154 Drop Point">
-            <img class="galleryImage" src="img/knives/knife02.jpg"
-                alt="2. Water Buffalo CPM-154 Drop Point with Python Sheath">
-            <img class="galleryImage" src="img/knives/knife03.jpg"
-                alt="3. Carbon Fiber CPM-154 Drop Point with Stringray Sheath">
-            <img class="galleryImage" src="img/knives/knife04.jpg" alt="4. Desert Ironwood CPM-154 Drop Point">
-            <img class="galleryImage" src="img/knives/knife05.jpg" alt="5. Cocobola CPM-154 Drop Point">
-            <img class="galleryImage" src="img/knives/knife06.jpg" alt="6. Green Canvas Micarta CPM-154 Drop Point">
-            <img class="galleryImage" src="img/knives/knife07.jpg" alt="7. Stabilized Maple CPM-154 Semi Skinner">
-            <img class="galleryImage" src="img/knives/knife08.jpg" alt="8. Ebony / Giraffe Bone CPM-154 Semi Skinner">
-            <img class="galleryImage" src="img/knives/knife09.jpg" alt="9.Sambar Stag CPM-154 Drop Point with Cobra Sheath">
-            <img class="galleryImage" src="img/knives/knife10.jpg"
-                alt="10. Stabilized Giraffe Bone CPM-154 Drop Point with Stingray Sheath">
-            <img class="galleryImage" src="img/knives/knife11.jpg"
-                alt="11. Hornbeam / Water Buffalo CPM-154 Drop Point with Carp Sheath">
-            <img class="galleryImage" src="img/knives/knife12.jpg" alt="12. Stabilized Box Elder CPM-154 Drop Point">
-            <img class="galleryImage" src="img/knives/knife13.jpg" alt="13. Water Buffalo / Bocote S-30-V Drop Point">
-            <img class="galleryImage" src="img/knives/knife14.jpg" alt="14. Black Canvas Micarta S-30-V Drop Point">
-            <img class="galleryImage" src="img/knives/knife15.jpg" alt="15. Red Linen Micarta S-30-V Drop Point">
-            <img class="galleryImage" src="img/knives/knife16.jpg" alt="16. Camo Canvas Micarta S-30-V Drop Point">
-            <img class="galleryImage" src="img/knives/knife17.jpg" alt="17. Desert Ironwood CPM-154 Drop Point">
-            <img class="galleryImage" src="img/knives/knife18.jpg" alt="18. Stabilized Big Leaf Maple CPM-154 Semi Skinner">
-            <img class="galleryImage" src="img/knives/knife19.jpg" alt="19. Green Canvas Micarta 154CM Axe and CPM-154 Hunter">
-            <img class="galleryImage" src="img/knives/knife20.jpg" alt="20. Water Buffalo Bone 154CM Clip Point">
-            <img class="galleryImage" src="img/knives/knife21.jpg" alt="21. Forest Green G-10 CPM-154 Clip Point">
-            <img class="galleryImage" src="img/knives/knife22.jpg" alt="22. Camel Bone 154CM Drop Point">
-            <img class="galleryImage" src="img/knives/knife23.jpg" alt="23. Ivory Micarta 154CM Drop Point">
-            <img class="galleryImage" src="img/knives/knife24.jpg" alt="24. Water Buffalo / Bocote CPM-154 Semi Skinner">
-            <img class="galleryImage" src="img/knives/knife25.jpg" alt="25. Forest Green G-10 CPM-154 Drop Point">
-            <img class="galleryImage" src="img/knives/knife26.jpg" alt="26. Green Canvas Micarta CPM-154 Drop Point">
-            <img class="galleryImage" src="img/knives/knife27.jpg" alt="27. Green G-10 CPM-154 Trailing Point">
-            <img class="galleryImage" src="img/knives/knife28.jpg" alt="28. Ivory Micarta S-90-V Drop Point">
-            <img class="galleryImage" src="img/knives/knife29.jpg" alt="29. Stag S-90-V Semi Skinner">
-            <img class="galleryImage" src="img/knives/knife30.jpg" alt="30. Stag S-90-V Semi Skinner with Stingray Sheath">
-            <img class="galleryImage" src="img/knives/knife31.jpg" alt="31. Black Canvas Micarta S-90-V Drop Point">
-            <img class="galleryImage" src="img/knives/knife32.jpg" alt="32. Carbon Fiber S-90-V Semi Skinner">
-            <img class="galleryImage" src="img/knives/knife33.jpg" alt="33. Black Canvas Micarta S-90-V  Drop Point">
-        </div>
-        <footer>
-            <h6>&copy St. Amour Knives</h6>
-            <h6>All Rights Reserved &#8226
-                <script async type="text/javascript">
-                    var d = new Date()
-                    document.write(d.getFullYear())
-                </script>
-            </h6>
-        </footer>
+    <main>
+        <section class="knife-section">
+            <div class="knives-text">
+                <h4>This gallery showcases a small selection of past and current work.</h4>
+                <p>If you don’t see exactly what you’re looking for, feel free to reach out — I’m
+                    happy to share current inventory or discuss options for a custom piece tailored
+                    to your needs.</p>
+            </div>
+            <h2>Hunting Knives</h2>
+            <div class="knife-grid">
+                <div class="knife-card knife-card-large">
+                    <picture>
+                        <source srcset="images/knives/Hunters.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/Hunters.jpg"
+                            alt="Set of Drop Point and Semi-Skinner Knives">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> 154CM</p>
+                        <p><strong>Handle:</strong>Micarta, Giraffe Bone, Carbon Fiber, Muskox Skull</p>
+                        <p><strong>Type:</strong> Drop Point, Semi-Skinner</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-M4Lava-DropPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-M4Lava-DropPoint.jpg"
+                            alt="CPM-154, M4-Lava, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> M4-Lava</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-WaterBuffalo-DropPointPython.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-WaterBuffalo-DropPointPython.jpg"
+                            alt="CPM-154, Water Buffalo, Drop Point Knife with Python Sheath">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Water Buffalo</p>
+                        <p><strong>Type:</strong> Drop Point with Python Sheath</p>
+                    </div>
+                </div>
+                <div class="knife-card knife-card-large">
+                    <picture>
+                        <source srcset="images/knives/Hunters-2.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/Hunters-2.jpg" alt="Set of Drop Point Knives">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> ATS-34</p>
+                        <p><strong>Handle:</strong>Dymalux, Stabilized Maple, Stabilized Maple, Dymalux, Water Buffalo
+                            Bone</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-CarbonFiber-DropPoingStringray.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-CarbonFiber-DropPoingStringray.jpg"
+                            alt="CPM-154, Carbon Fiber, Drop Point Knife with Stringray Sheath">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Carbon Fiber</p>
+                        <p><strong>Type:</strong> Drop Point with Stringray Sheath</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-DesertIronwood-DropPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-DesertIronwood-DropPoint.jpg"
+                            alt="CPM-154, Desert Ironwood, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Desert Ironwood</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-CocobolaDropPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-CocobolaDropPoint.jpg"
+                            alt="CPM-154, Cocobola, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Cocobola</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-GreenCanvasMicarta-DropPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-GreenCanvasMicarta-DropPoint.jpg"
+                            alt="CPM-154, Green Canvas Micarta, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Green Canvas Micarta</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-StabilizedMaple-SemiSkinner.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-StabilizedMaple-SemiSkinner.jpg"
+                            alt="CPM-154, Stabilized Maple, Semi Skinner Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Stabilized Maple</p>
+                        <p><strong>Type:</strong> Semi Skinner</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-EbonyGiraffeBone-SemiSkinner.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-EbonyGiraffeBone-SemiSkinner.jpg"
+                            alt="CPM-154, Ebony / Giraffe Bone, Semi Skinner Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Ebony / Giraffe Bone</p>
+                        <p><strong>Type:</strong> Semi Skinner</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-SambarStag-DropPointCobra.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-SambarStag-DropPointCobra.jpg"
+                            alt="CPM-154, Sambar Stag, Drop Point Knife with Cobra Sheath">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Sambar Stag</p>
+                        <p><strong>Type:</strong> Drop Point with Cobra Sheath</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-StabilizedGiraffeBone-DropPointStingray.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-StabilizedGiraffeBone-DropPointStingray.jpg"
+                            alt="CPM-154, Stabilized Giraffe Bone, Drop Point Knife with Stingray Sheath">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Stabilized Giraffe Bone</p>
+                        <p><strong>Type:</strong> Drop Point with Stingray Sheath</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-HornbeamWaterBuffalo-DropPointCarp.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-HornbeamWaterBuffalo-DropPointCarp.jpg"
+                            alt="CPM-154, Hornbeam / Water Buffalo, Drop Point Knife with Carp Sheath">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Hornbeam / Water Buffalo</p>
+                        <p><strong>Type:</strong> Drop Point with Carp Sheath</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-StabilizedBoxElder-DropPoing.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-StabilizedBoxElder-DropPoing.jpg"
+                            alt="CPM-154, Stabilized Box Elder, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Stabilized Box Elder</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/S30V-WaterBuffaloBocote-DropPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/S30V-WaterBuffaloBocote-DropPoint.jpg"
+                            alt="S30V, Water Buffalo / Bocote, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> S30V</p>
+                        <p><strong>Handle:</strong> Water Buffalo / Bocote</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/S30V-BlackCanvasMicarta-DropPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/S30V-BlackCanvasMicarta-DropPoint.jpg"
+                            alt="S30V, Black Canvas Micarta, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> S30V</p>
+                        <p><strong>Handle:</strong> Black Canvas Micarta</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/S30V-RedLinenMicarta-DropPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/S30V-RedLinenMicarta-DropPoint.jpg"
+                            alt="S30V, Red Linen Micarta, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> S30V</p>
+                        <p><strong>Handle:</strong> Red Linen Micarta</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/S30V-CamoCanvasMicarta-DropPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/S30V-CamoCanvasMicarta-DropPoint.jpg"
+                            alt="S30V, Camo Canvas Micarta, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> S30V</p>
+                        <p><strong>Handle:</strong> Camo Canvas Micarta</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-DesertIronwood-DropPoint-2.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-DesertIronwood-DropPoint-2.jpg"
+                            alt="CPM-154, Desert Ironwood, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Desert Ironwood</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-StablizedBigLeafMaple-SemiSkinner.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-StablizedBigLeafMaple-SemiSkinner.jpg"
+                            alt="CPM-154, Stabilized Big Leaf Maple, Semi Skinner Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Stabilized Big Leaf Maple</p>
+                        <p><strong>Type:</strong> Semi Skinner</p>
+                    </div>
+                </div>
+
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/AxeHunter.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/AxeHunter.jpg" alt="
+                     154CM, Green Canvas Micarta, Axe and CPM-154, Green Canvas Micarta, Hunter">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> 154CM / CPM-154</p>
+                        <p><strong>Handle:</strong> Green Canvas Micarta</p>
+                        <p><strong>Type:</strong> Axe and Hunter</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/154CM-WaterBuffaloBone-ClipPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/154CM-WaterBuffaloBone-ClipPoint.jpg"
+                            alt="154CM, Water Buffalo Bone, Clip Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> 154CM</p>
+                        <p><strong>Handle:</strong> Water Buffalo Bone</p>
+                        <p><strong>Type:</strong> Clip Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-ForestGreenG10-ClipPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-ForestGreenG10-ClipPoint.jpg"
+                            alt="CPM-154, Forest Green G-10, Clip Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Forest Green G-10</p>
+                        <p><strong>Type:</strong> Clip Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/154CM-CamelBone-DropPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/154CM-CamelBone-DropPoint.jpg"
+                            alt="154CM, Camel Bone, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> 154CM</p>
+                        <p><strong>Handle:</strong> Camel Bone</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/154CM-IvoryMicarta-DropPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/154CM-IvoryMicarta-DropPoint.jpg"
+                            alt="154CM, Ivory Micarta, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> 154CM</p>
+                        <p><strong>Handle:</strong> Ivory Micarta</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-WaterBuffaloBocote-SemiSkinner.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-WaterBuffaloBocote-SemiSkinner.jpg"
+                            alt="CPM-154, Water Buffalo / Bocote, Semi Skinner Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Water Buffalo / Bocote</p>
+                        <p><strong>Type:</strong> Semi Skinner</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-ForestGreenG10-DropPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-ForestGreenG10-DropPoint.jpg"
+                            alt="CPM-154, Forest Green G-10, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Forest Green G-10</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-GreenCanvasMicarta-DropPoint-2.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-GreenCanvasMicarta-DropPoint-2.jpg"
+                            alt="CPM-154, Green Canvas Micarta, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Green Canvas Micarta</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/CPM154-GreenG10-TrailingPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/CPM154-GreenG10-TrailingPoint.jpg"
+                            alt="CPM-154, Green G-10, Trailing Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> CPM-154</p>
+                        <p><strong>Handle:</strong> Green G-10</p>
+                        <p><strong>Type:</strong> Trailing Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/S90V-IvoryMicarta-DropPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/S90V-IvoryMicarta-DropPoint.jpg"
+                            alt="S-90-V, Ivory Micarta, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> S90V</p>
+                        <p><strong>Handle:</strong> Ivory Micarta</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/S90V-Stag-SemiSkinner.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/S90V-Stag-SemiSkinner.jpg"
+                            alt="S90V, Stag, Semi Skinner Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> S90V</p>
+                        <p><strong>Handle:</strong> Stag</p>
+                        <p><strong>Type:</strong> Semi Skinner</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/S90V-Stag-SemiSkinnerStingray.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/S90V-Stag-SemiSkinnerStingray.jpg"
+                            alt="S90V, Stag, Semi Skinner Knife with Stingray Sheath">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> S90V</p>
+                        <p><strong>Handle:</strong> Stag</p>
+                        <p><strong>Type:</strong> Semi Skinner with Stingray Sheath</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/S90V-BlackCanvasMicarta-DropPoint.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/S90V-BlackCanvasMicarta-DropPoint.jpg"
+                            alt="S90V, Black Canvas Micarta, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> S90V</p>
+                        <p><strong>Handle:</strong> Black Canvas Micarta</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/S90V-CarbonFiber-SemiSkinner.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/S90V-CarbonFiber-SemiSkinner.jpg"
+                            alt="S90V, Carbon Fiber, Semi Skinner Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> S90V</p>
+                        <p><strong>Handle:</strong> Carbon Fiber</p>
+                        <p><strong>Type:</strong> Semi Skinner</p>
+                    </div>
+                </div>
+                <div class="knife-card">
+                    <picture>
+                        <source srcset="images/knives/S90V-BlackCanvasMicarta-DropPoint-2.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/S90V-BlackCanvasMicarta-DropPoint-2.jpg"
+                            alt="S90V, Black Canvas Micarta, Drop Point Knife">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> S90V</p>
+                        <p><strong>Handle:</strong> Black Canvas Micarta</p>
+                        <p><strong>Type:</strong> Drop Point</p>
+                    </div>
+                </div>
+
+                <!-- More knife-card divs -->
+            </div>
+        </section>
+
+        <section class="knife-section">
+            <h2>Fish Knives</h2>
+            <div class="knife-grid">
+                <div class="knife-card knife-card-large">
+                    <picture>
+                        <source srcset="images/knives/Fillets.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/Fillets.jpg"
+                            alt="Set of Fillet Knives">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> 154CM, ATS-34 </p>
+                        <p><strong>Handle:</strong> G-10, Dymalux</p>
+                        <p><strong>Type:</strong> Fillet</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="knife-section">
+            <h2>Kitchen Knives</h2>
+            <div class="knife-grid">
+                <div class="knife-card knife-card-large">
+                    <picture>
+                        <source srcset="images/knives/Kitchen.avif" type="image/avif">
+                        <img class="knife-img" src="images/knives/Kitchen.jpg"
+                            alt="Set of 154CM, Black Paper Micarta, Kitchen Knives">
+                    </picture>
+                    <div class="knife-info">
+                        <p><strong>Steel:</strong> 154CM</p>
+                        <p><strong>Handle:</strong> Black Paper Micarta</p>
+                        <p><strong>Type:</strong> Kitchen</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <p>&copy St. Amour Knives</p>
+        <p>All Rights Reserved &#8226
+            <script async type="text/javascript">
+                var d = new Date()
+                document.write(d.getFullYear())
+            </script>
+        </p>
+    </footer>
+
     <div id="modalElement" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <div id="caption" class="caption"></div>
+        <img class="knife-img" class="modal-content" id="modalImage">
     </div>
     <script async>
         // Get the modal
         var modalElement = document.getElementById("modalElement");
 
         // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var images = document.getElementsByClassName("galleryImage");
+        var images = document.getElementsByClassName("knife-img");
         var modalImageElement = document.getElementById("modalImage");
-        var captionText = document.getElementById("caption");
         for (i = 0; i < images.length; i++) {
             images[i].onclick = function () {
                 modalElement.style.display = "block";
                 modalImageElement.src = this.src;
-                captionText.innerHTML = this.alt;
             }
         }
         modalElement.onclick = function () {

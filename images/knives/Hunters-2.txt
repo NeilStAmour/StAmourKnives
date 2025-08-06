@@ -1,0 +1,3 @@
+Steel: ATS34
+Handle: Dymalux, Stabilized Maple, Stabilized Maple, Dymalux, Water Buffalo Bone
+Type: Drop Point

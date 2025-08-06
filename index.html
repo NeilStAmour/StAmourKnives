@@ -9,76 +9,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>St. Amour Knives</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link rel='stylesheet' href='css/style.css' />
+    <link rel='stylesheet' href='css/style-1.css' />
 </head>
 
 <body>
-    <script async>
-        var $buoop = {
-            required: { e: 16, f: 52, c: 57, s: 10.3, o: 44, o_a: 46, samsung: 6.2 },
-            onshow: function $showBanner() {
-                document.getElementById("browserUpdate").style.display = "block";
-            },
-            nomessage: true, test: false, insecure: true, api: 2019.06
-        };
-        function $buo_f() {
-            var e = document.createElement("script");
-            e.src = "https://www.browser-update.org/update.min.js";
-            document.body.appendChild(e);
-        };
-        try { document.addEventListener("DOMContentLoaded", $buo_f, false) }
-        catch (e) { window.attachEvent("onload", $buo_f) }
-    </script>
+
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html" id="homeTile">Home</a></li>
-                <li><a href="knives.html">Knives</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <a href="/" id="homeTile">Home</a>
+            <a href="knives.html">Knives</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <div id="browserUpdate" style="display: none">
-        <span onclick="this.parentElement.style.display='none'">&times;</span>
-        <p> Your browser is out of date and no longer supported. <br>
-            Please update or download a modern browser to ensure the best and safest experience on the web. <br>
-            For security and speed we recommend <a href="https://www.mozilla.org/firefox/" rel="noreferrer noopener"
-                target="_blank">Mozilla Firefox</a>.</p>
-    </div>
-    <main class="home">
-        <div class="titleImage">
-            <h1>St. Amour Knives</h1>
-        </div>
-        <div class="homeGrid">
-            <div id="L1">
-                <img src="img/knifeA.jpg" alt="">
-            </div>
-            <div id="R1">
-                <p>Handcrafted knives from the finest materials</p>
-            </div>
-            <div id="R2">
-                <img src="img/knifeB.jpg" alt="">
-            </div>
-            <div id="L2">
-                <p>All products guaranteed for lifetime use</p>
-            </div>
-            <div id="L3">
-                <img src="img/knifeC.jpg" alt="">
-            </div>
-            <div id="R3">
-                <p>High quality sheaths built for each unique blade</p>
-            </div>
-        </div>
-        <footer>
-            <p>&copy St. Amour Knives</p>
-            <p>All Rights Reserved &#8226
-                <script async type="text/javascript">
-                    var d = new Date()
-                    document.write(d.getFullYear())
-                </script>
-            </p>
-        </footer>
-    </main>
-</body>
+    <!-- Hero -->
+    <section class="hero">
+        <!-- <img src="images/st-amour-knives-logo-white.png" alt="Close-up of stainless knife blade"> -->
+        <h1>St. Amour Handcrafted Knives</h1>
+        <p>Hand Crafted Custom Knives</p>
+    </section>
+    <main>
 
-</html>
+        <!-- Selling Points -->
+        </section>
+        <section class="selling-points">
+
+            <div class="selling-point">
+                <picture>
+                    <source srcset="images/material.avif" type="image/avif">
+                    <img class="knife-img" src="images/material.jpg"
+                        alt="Knife handle made from Walrus Ivory">
+                </picture>
+                <div class="text">
+                    <h3>Materials That Matter</h3>
+                    <p>From ironwood to ivory, every handle is shaped from durable, high-character materials chosen for
+                        comfort, longevity, and feel in the hand.</p>
+                </div>
+            </div>
+
+            <div class="selling-point">
+                <picture>
+                    <source srcset="images/steel.avif" type="image/avif">
+                    <img class="knife-img" src="images/steel.jpg"
+                        alt="Close-up of Stainless Knife Blade">
+                </picture>
+                <div class="text">
+                    <h3>Sharp. Strong. Stainless.</h3>
+                    <p>Every knife is made from high-grade stainless steel, chosen for edge retention, corrosion
+                        resistance,
+                        and reliable performance in the field or kitchen.</p>
+                </div>
+            </div>
+
+            <div class="selling-point">
+                <picture>
+                    <source srcset="images/leather.avif" type="image/avif">
+                    <img class="knife-img" src="images/leather.jpg"
+                        alt="Custom Leather Sheath">
+                </picture>
+                <div class="text">
+                    <h3>A Proper Sheath, Every Time</h3>
+                    <p>Each knife comes with a custom-fit leather sheath — carefully sewn and shaped to match the knife
+                        it
+                        protects, then finished by hand.</p>
+                </div>
+            </div>
+
+            <div class="selling-point">
+                <picture>
+                    <source srcset="images/used.avif" type="image/avif">
+                    <img class="knife-img" src="images/used.jpg"
+                        alt="Close up of a Working Knife">
+                </picture>
+                <div class="text">
+                    <h3>Made to Be Used</h3>
+                    <p>These are working knives — built for the field, the forest, or the kitchen. Durable, reliable
+                        tools
+                        made to perform, not to sit on a shelf.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact">
+            <h3>Ready to start talking about your next knife?</h3>
+            <p>Whether you have something specific in mind or just want to see what's available, get in touch and 
+                let's get started.</p>
+            <a href="contact.html">Get in Touch</a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy St. Amour Knives</p>
+        <p>All Rights Reserved &#8226
+            <script async type="text/javascript">
+                var d = new Date()
+                document.write(d.getFullYear())
+            </script>
+        </p>
+    </footer>
+</body>
