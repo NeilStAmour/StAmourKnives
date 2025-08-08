@@ -450,7 +450,7 @@ form.form input[type="submit"]:hover {
     }
 }
 
-@media (min-width: 1921px) {
+@media (min-width: 1920px) {
     .knife-grid {
         grid-template-columns: repeat(4, auto);
     }
